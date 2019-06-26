@@ -11,12 +11,27 @@ chrome">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize_zh.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <div class="nav m-0">
+        <div class="container">
+            <ul class="nav_list d-flex justify-content-around">
+                <li><a href="#" class="py-2">首页</a></li>
+                <li><a href="#" class="py-2">品牌</a></li>
+                <li><a href="#" class="py-2">产品</a></li>
+                <li><a href="#" class="py-2">关于我们</a></li>
+                <li><a href="#" class="py-2">联系我们</a></li>
+                <li><a href="#" class="py-2">登录</a>
+                <span class="mx-1">|</span>
+                <a href="#" class="py-2">注册</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- 头部 -->
     <div class="home-header">
         <div class="container">
@@ -37,18 +52,6 @@ chrome">
                     <div class="m_nav_ham" id="m_ham_3"></div>
                 </div>
                 <!-- 隐藏部分内容 -->
-                <!--<div class="collapse container_open" id="content">-->
-                    <!--<nav class="navbar navbar-default navbar-fixed-top">-->
-                        <!--<ul id="m_nav-list"  class="m_nav menu_list">-->
-                            <!--<li class="nav-item"><a href="#" nav-link>首页</a></li>-->
-                            <!--<li class="nav-item"><a href="#" nav-link>品牌</a></li>-->
-                            <!--<li class="nav-item"><a href="#" nav-link>产品</a></li>-->
-                            <!--<li class="nav-item"><a href="#" nav-link>动态</a></li>-->
-                            <!--<li class="nav-item"><a href="#" nav-link>关于我们</a></li>-->
-                            <!--<li class="nav-item"><a href="#" nav-link>联系我们</a></li>-->
-                        <!--</ul>-->
-                    <!--</nav>-->
-                <!--</div>-->
             </div>
         </div>
         <div class="inner-bootom">
@@ -130,9 +133,11 @@ chrome">
         </div>
     </div>
     <!-- 数据块部分-->
-    <div class="home-stats row">
-        <div class="col-md-6 stats-bg"></div>
-        <div class="col-md-6"><img src="img" alt=""/></div>
+    <div class="home-stats row mx-0">
+        <div class="col-md-6 stats-bg p-0">
+            <img src="images/states-bg.jpg" class="w-100" alt="">
+        </div>
+        <div class="col-md-6 p-o"><img src="img" alt=""/></div>
     </div>
     <!-- 菜单栏 -->
     <div class="home-services"></div>
@@ -142,6 +147,7 @@ chrome">
     <div class="home-testimonials"></div>
     <!-- 底部 -->
     <div class="home-footer"></div>
+    <a href="#" id="to_top"></a>
 </body>
 
 </html>

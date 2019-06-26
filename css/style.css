@@ -11,9 +11,35 @@ ul{
     margin:0;
     padding:0;
 }
+.nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:20;    
+    background:#e96147;
+}
+.nav .container{
+    height:60px;
+    padding:0 100px;
+}
+.nav .container li a,span{
+    color:#333;
+    font-weight: 600;
+}
+.nav .container .nav_list{
+    margin:18px 0;
+}
+.nav .container a:hover{
+    border-top:3px solid rgba(255, 255, 255, 0.38);
+    border-bottom:3px solid rgba(255, 255, 255, 0.38);
+    color:#fff;
+    text-decoration: none;
+}
 .home-header{
     background:url(../images/nav.jpg) repeat;
     width: 100%;
+    margin-top:60px;
 }
 .home-header-logo{
     margin:0;
@@ -38,13 +64,13 @@ ul{
 }
 /*三条线离顶部距离*/
 #m_nav_menu{
-    top:2%;
+    top:1%;
 }
 /*三条线样式*/
 .m_nav_ham{
     width:30px;
     height:3px;
-    background:#e96147;
+    background:#fff;
     margin:5px auto;
 }
 /* 盒子 过度秒数 */
@@ -158,15 +184,15 @@ ul{
         transform: scale(1.2);
     }
 
-    10.5625% {
+    10% {
         opacity: 1;
     }
 
-    23.4375% {
+    20% {
         opacity: 1;
     }
 
-    26.5625% {
+    25% {
         opacity: 0;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -196,15 +222,15 @@ ul{
         transform: scale(1.2);
     }
 
-    10.5625% {
+    10% {
         opacity: 1;
     }
 
-    23.4375% {
+    20% {
         opacity: 1;
     }
 
-    26.5625% {
+    25% {
         opacity: 0;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -228,21 +254,21 @@ ul{
 }
 
 @-webkit-keyframes kenburns-2 {
-    13.4375% {
+    20% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    26.5625% {
+    30% {
         opacity: 1;
     }
 
-    38.4375% {
+    40% {
         opacity: 1;
     }
 
-    51.5625% {
+    45% {
         opacity: 0;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -256,21 +282,21 @@ ul{
 }
 
 @keyframes kenburns-2 {
-    13.4375% {
+    20% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    26.5625% {
+    30% {
         opacity: 1;
     }
 
-    38.4375% {
+    40 {
         opacity: 1;
     }
 
-    51.5625% {
+    45% {
         opacity: 0;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -284,21 +310,21 @@ ul{
 }
 
 @-webkit-keyframes kenburns-3 {
-    28.4375% {
+    38% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    31.5625% {
+    50% {
         opacity: 1;
     }
 
-    53.4375% {
+    60% {
         opacity: 1;
     }
 
-    66.5625% {
+    65% {
         opacity: 0;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -312,21 +338,21 @@ ul{
 }
 
 @keyframes kenburns-3 {
-    28.4375% {
+    38% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    31.5625% {
+    50% {
         opacity: 1;
     }
 
-    53.4375% {
+    60% {
         opacity: 1;
     }
 
-    66.5625% {
+    65% {
         opacity: 0;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -340,17 +366,17 @@ ul{
 }
 
 @-webkit-keyframes kenburns-4 {
-    53.4375% {
+    60% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    56.5625% {
+    70% {
         opacity: 1;
     }
 
-    88.4375% {
+    80% {
         opacity: 1;
     }
 
@@ -362,17 +388,17 @@ ul{
 }
 
 @keyframes kenburns-4 {
-    53.4375% {
+    60% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    56.5625% {
+    70% {
         opacity: 1;
     }
 
-    88.4375% {
+    80% {
         opacity: 1;
     }
 
@@ -383,17 +409,17 @@ ul{
     }
 }
 @-webkit-keyframes kenburns-5 {
-    56.4375% {
+    75% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    78.5625% {
+    90% {
         opacity: 1;
     }
 
-    88.4375% {
+    95% {
         opacity: 1;
     }
 
@@ -405,17 +431,17 @@ ul{
 }
 
 @keyframes kenburns-5 {
-    56.4375% {
+    75% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
 
-    78.5625% {
+    90% {
         opacity: 1;
     }
 
-    88.4375% {
+    95% {
         opacity: 1;
     }
 
@@ -534,10 +560,34 @@ img.img-responsive{
     left:-10%;
 }
 .home-stats .stats-bg{
-    background:url(../images/states-bg.jpg) no-repeat;
-    min-height:800px;
+    min-height:400px;
     background-size: cover;
     border-top:3px solid #e4606d;
     border-bottom:3px solid #e4606d;
     border-right:3px solid #e4606d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#to_top{
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 3%;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/move-top.png) no-repeat 0px 0px;
+}
 }
