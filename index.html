@@ -18,7 +18,7 @@ chrome">
 </head>
 
 <body>
-    <div class="nav m-0">
+    <div class="nav m-0 p-0">
         <div class="container">
             <ul class="nav_list d-flex justify-content-around">
                 <li><a href="#" class="py-2">首页</a></li>
@@ -26,10 +26,28 @@ chrome">
                 <li><a href="#" class="py-2">产品</a></li>
                 <li><a href="#" class="py-2">关于我们</a></li>
                 <li><a href="#" class="py-2">联系我们</a></li>
-                <li><a href="#" class="py-2">登录</a>
-                <span class="mx-1">|</span>
-                <a href="#" class="py-2">注册</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#mymodal"
+                        class="cursor-pointer mt-5 py-2">登录</a>
+                    <span class="mx-1">|</span>
+                    <a href="#" class="py-2">注册</a></li>
             </ul>
+        </div>
+    </div>
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content w-75">
+                <div class="modal-header py-5 border-0">
+                    <img src="images/logo.png" alt="" class="imgs m-auto">
+                </div>
+                <div class="modal-body pb-0">
+                    <input type="text" class="d-block w-75 mx-auto  px-3 mb-3" placeholder="Username"/>
+                    <input type="text" class="d-block w-75 mx-auto  px-3 mb-3" placeholder="Password"/>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <a class="btn btn-primary mx-auto pt-0 px-5 text-white" data-dismiss="modal">登录</a>
+                </div>
+                <p class="text-center">未注册？<a href="#" class="reg">创建一个账户</a></p>
+            </div>
         </div>
     </div>
     <!-- 头部 -->
@@ -121,13 +139,17 @@ chrome">
                 <div class="col-lg-7 col-sm-12 p-0 mt-5">
                     <div class="jumbotron w-75">
                         <h2>产品理念</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam consequuntur eaque eius error excepturi, exercitationem facilis libero nisi odio odit perferendis quas qui quia sed sequi sit voluptatibus.</p>
-                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquam consequuntur
+                            eaque eius error excepturi, exercitationem facilis libero nisi odio odit perferendis quas
+                            qui quia sed sequi sit voluptatibus.</p>
+
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-12 row ml-2 p-0 about-img">
-                    <div class="col-md-6 col-sm-12 p-0 img-left"><img src="images/b2%20(1).jpg" class="img-responsive" alt=""/></div>
-                    <div class="col-md-6 col-sm-12 p-0 alert img-right"><img src="images/b1%20(1).jpg" class="img-responsive" alt=""/></div>
+                    <div class="col-md-6 col-sm-12 p-0 img-left"><img src="images/b2%20(1).jpg" class="img-responsive"
+                            alt="" /></div>
+                    <div class="col-md-6 col-sm-12 p-0 alert img-right"><img src="images/b1%20(1).jpg"
+                            class="img-responsive" alt="" /></div>
                 </div>
             </div>
         </div>
@@ -137,7 +159,7 @@ chrome">
         <div class="col-md-6 stats-bg p-0">
             <img src="images/states-bg.jpg" class="w-100" alt="">
         </div>
-        <div class="col-md-6 p-o"><img src="img" alt=""/></div>
+        <div class="col-md-6 p-o"><img src="img" alt="" /></div>
     </div>
     <!-- 菜单栏 -->
     <div class="home-services"></div>

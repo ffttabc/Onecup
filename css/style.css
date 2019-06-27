@@ -1,5 +1,7 @@
 *{
     box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 body{
     font-family: 'Mukta Mahee', sans-serif;
@@ -22,6 +24,7 @@ ul{
 .nav .container{
     height:60px;
     padding:0 100px;
+    z-index:21;  
 }
 .nav .container li a,span{
     color:#333;
@@ -34,6 +37,32 @@ ul{
     border-top:3px solid rgba(255, 255, 255, 0.38);
     border-bottom:3px solid rgba(255, 255, 255, 0.38);
     color:#fff;
+    text-decoration: none;
+}
+/* .modal .modal-dialog{
+    margin:8rem auto !important;
+} */
+.modal .modal-content{
+    left:20%;
+}
+.modal .modal-header .imgs{
+    border-radius: 50%;
+    background:#333;
+}
+.modal .modal-body input{
+    height:3rem;
+    line-height: 3rem;
+    border:1px solid #aaa;
+}
+.modal .modal-footer .btn{
+    width:75%;
+    height:3rem;
+    line-height: 3rem;
+}
+.modal p{
+    font-size: 0.75rem;
+}
+.modal p a{
     text-decoration: none;
 }
 .home-header{
