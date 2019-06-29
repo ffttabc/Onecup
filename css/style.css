@@ -13,6 +13,9 @@ ul{
     margin:0;
     padding:0;
 }
+.no-padding{
+    padding-right: 0px !important;
+}
 .nav{
     position:fixed;
     top:0;
@@ -44,6 +47,7 @@ ul{
 } */
 .modal .modal-content{
     left:20%;
+    margin-top:30%;
 }
 .modal .modal-header .imgs{
     border-radius: 50%;
@@ -564,11 +568,22 @@ ul{
 }
 .home-about h3{
     font-size: 3rem;
-    color:#000;
+    color:#000; 
 }
 .home-about span{
     font-size:5rem;
     color:#d66047;
+}
+.home-about .jumbotron {
+   margin-bottom: 6rem;
+}
+.home-about .jumbotron span{
+    font-size:1.8rem;
+}
+.home-about .jumbotron p{
+    letter-spacing: 5px;
+    font-size:1.3rem;
+    margin-bottom:0.2rem;
 }
 .about-img img{
     border: 6px solid #e96147;
@@ -595,6 +610,58 @@ img.img-responsive{
     border-bottom:3px solid #e4606d;
     border-right:3px solid #e4606d;
 }
+.home-stats .col-md-6 .my_height{
+    min-height:400px;
+}
+.home-stats .col-md-6 .flex-column div{
+    height:33.333%;
+}
+.home-stats .col-md-6 .flex-column .square{
+    background: #dd2e0f;
+    transition: all 3s;
+    animation: bgchange 3 alternate; 
+    /*设置动画播放之前和播放之后的状态*/
+    /* animation-fill-mode: both; */
+}
+.home-stats .col-md-6 .flex-column .square:hover{
+    transform:rotateY(180deg);
+    background:#26c1c5;
+}
+@keyframes bgchange{
+    0% {background:#df2d0d;}
+    50%{background:#ffff;}
+    100% {background:#26c1c5;}
+}
+/* .home-stats .col-md-6 .flex-column .square span{
+    display: block;
+}
+.home-stats .col-md-6 .flex-column .square:hover span{
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -618,5 +685,4 @@ img.img-responsive{
     border: none;
     text-indent: 100%;
     background: url(../images/move-top.png) no-repeat 0px 0px;
-}
 }
