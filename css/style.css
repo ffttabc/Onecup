@@ -72,7 +72,7 @@ ul{
 .home-header{
     background:url(../images/nav.jpg) repeat;
     width: 100%;
-    margin-top:60px;
+    margin-top:-21px;
 }
 .home-header-logo{
     margin:0;
@@ -86,19 +86,16 @@ ul{
     font-family: 'Righteous', cursive;
 }
 /* 顶部右侧三条线 */
-#m_nav_menu {
+.m_nav_menu {
     width: 50px;
     height: 32px;
     position: fixed;
-    top: 30px;
+    top: 15px;
     right: 13.4%;
     z-index: 999 !important;
     cursor: pointer;/*悬浮显示小手*/
 }
 /*三条线离顶部距离*/
-#m_nav_menu{
-    top:1%;
-}
 /*三条线样式*/
 .m_nav_ham{
     width:30px;
@@ -115,9 +112,9 @@ ul{
     transition-duration: 0.3s;
 }
 /* 第一根线离顶部距离 */
-.header-ham{
+/* .header-ham{
     margin-top:0.8em;
-}
+} */
 /* 头部下边栏 */
 .inner-bottom-login{
     text-align: center;

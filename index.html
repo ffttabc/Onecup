@@ -18,21 +18,57 @@ chrome">
 </head>
 
 <body class="no-padding">
-    <div class="nav m-0">
-        <div class="container">
+    <div class="nav m-0" id="main">
+        <div class="container" id="header">
             <ul class="nav_list d-flex justify-content-around">
                 <li><a href="#" class="py-2">首页</a></li>
                 <li><a href="#" class="py-2">品牌</a></li>
                 <li><a href="#" class="py-2">产品</a></li>
                 <li><a href="#" class="py-2">关于我们</a></li>
                 <li><a href="#" class="py-2">联系我们</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#mymodal"
-                        class="cursor-pointer mt-5 py-2">登录</a>
+                <li><a href="#" data-toggle="modal" data-target="#mymodal" class="cursor-pointer mt-5 py-2">登录</a>
                     <span class="mx-1">|</span>
                     <a href="#" class="py-2">注册</a></li>
             </ul>
+            <!-- <div id="exit">
+                <a href="#" onClick="exit1();"></a>
+            </div> -->
         </div>
     </div>
+    <!-- 右侧三条线 -->
+    <div class="m_nav m_nav_menu" id="btn" dataset-target="i">
+        <div class="m_nav_ham header-ham" id="m_ham_1"></div>
+        <div class="m_nav_ham" id="m_ham_2"></div>
+        <div class="m_nav_ham" id="m_ham_3"></div>
+    </div>
+    <div class="m_nav m_nav_menu" id="btn1">
+        <div class="m_nav_ham header-ham" id="m_ham_1"></div>
+        <div class="m_nav_ham" id="m_ham_2"></div>
+        <div class="m_nav_ham" id="m_ham_3"></div>
+    </div>
+    <script>
+        var main = document.getElementById("main");
+        var btn = document.getElementById("btn");
+       $("#btn1").css("display", "none");
+        $("#btn").click(function (e) {
+            $("#main").css("top", "0");
+            $("#main").css("transition", ".3s");
+        })
+        $("#btn").click(function () {
+            $("#main").css("top", "-80px");
+            $("#btn").css("display", "none");
+            $("#btn1").css("display", "block");
+        })
+        $("#btn1").click(function () {
+            $("#main").css("top", "-80px");
+            $("#main").css("transition", ".3s");
+        })
+        $("#btn1").click(function () {
+            $("#main").css("top", "0");
+            $("#btn1").css("display", "none");
+            $("#btn").css("display", "block");
+        })
+    </script>
     <div class="modal no-padding" id="mymodal">
         <div class="modal-dialog">
             <div class="modal-content w-75">
@@ -40,8 +76,8 @@ chrome">
                     <img src="images/logo.png" alt="" class="imgs m-auto">
                 </div>
                 <div class="modal-body pb-0">
-                    <input type="text" class="d-block w-75 mx-auto  px-3 mb-3" placeholder="Username"/>
-                    <input type="text" class="d-block w-75 mx-auto  px-3 mb-3" placeholder="Password"/>
+                    <input type="text" class="d-block w-75 mx-auto  px-3 mb-3" placeholder="Username" />
+                    <input type="text" class="d-block w-75 mx-auto  px-3 mb-3" placeholder="Password" />
                 </div>
                 <div class="modal-footer border-0 pt-0">
                     <a class="btn btn-primary mx-auto pt-0 px-5 text-white" data-dismiss="modal">登录</a>
@@ -63,12 +99,12 @@ chrome">
                         </a>
                     </h1>
                 </div>
-                <!-- 右侧三条线 -->
+                <!-- 右侧三条线
                 <div class="m_nav" id="m_nav_menu">
                     <div class="m_nav_ham header-ham" id="m_ham_1"></div>
                     <div class="m_nav_ham" id="m_ham_2"></div>
                     <div class="m_nav_ham" id="m_ham_3"></div>
-                </div>
+                </div> -->
                 <!-- 隐藏部分内容 -->
             </div>
         </div>
@@ -194,7 +230,7 @@ chrome">
     <!-- 底部 -->
     <div class="home-footer">
 
-        
+
     </div>
     <a href="#" id="to_top"></a>
 </body>
