@@ -42,28 +42,28 @@ chrome">
         <div class="m_nav_ham" id="m_ham_3"></div>
     </div>
     <div class="m_nav m_nav_menu" id="btn1">
-        <div class="m_nav_ham header-ham" id="m_ham_1"></div>
-        <div class="m_nav_ham" id="m_ham_2"></div>
-        <div class="m_nav_ham" id="m_ham_3"></div>
+        <div class="m_nav_ham_copy header-ham" id="m_ham_1"></div>
+        <div class="m_nav_ham_copy" id="m_ham_2"></div>
+        <div class="m_nav_ham_copy" id="m_ham_3"></div>
     </div>
     <script>
         var main = document.getElementById("main");
         var btn = document.getElementById("btn");
-       $("#btn1").css("display", "none");
-        $("#btn").click(function (e) {
+        $("#btn1").css("display", "none");
+        $("#btn").click(function(e) {
             $("#main").css("top", "0");
             $("#main").css("transition", ".3s");
         })
-        $("#btn").click(function () {
+        $("#btn").click(function() {
             $("#main").css("top", "-80px");
             $("#btn").css("display", "none");
             $("#btn1").css("display", "block");
         })
-        $("#btn1").click(function () {
+        $("#btn1").click(function() {
             $("#main").css("top", "-80px");
             $("#main").css("transition", ".3s");
         })
-        $("#btn1").click(function () {
+        $("#btn1").click(function() {
             $("#main").css("top", "0");
             $("#btn1").css("display", "none");
             $("#btn").css("display", "block");
@@ -94,18 +94,10 @@ chrome">
                 <div class="home-header-logo">
                     <h1>
                         <a href="index.html" class="">
-                            <img src="images/logo.png" alt="">
-                            一杯Beverages
+                            <img src="images/logo.png" alt=""> 一杯Beverages
                         </a>
                     </h1>
                 </div>
-                <!-- 右侧三条线
-                <div class="m_nav" id="m_nav_menu">
-                    <div class="m_nav_ham header-ham" id="m_ham_1"></div>
-                    <div class="m_nav_ham" id="m_ham_2"></div>
-                    <div class="m_nav_ham" id="m_ham_3"></div>
-                </div> -->
-                <!-- 隐藏部分内容 -->
             </div>
         </div>
         <div class="inner-bootom">
@@ -186,10 +178,8 @@ chrome">
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-12 row ml-2 p-0 about-img">
-                    <div class="col-md-6 col-sm-12 p-0 img-left"><img src="images/b2%20(1).jpg" class="img-responsive"
-                            alt="" /></div>
-                    <div class="col-md-6 col-sm-12 p-0 alert img-right"><img src="images/b1%20(1).jpg"
-                            class="img-responsive" alt="" /></div>
+                    <div class="col-md-6 col-sm-12 p-0 img-left"><img src="images/b2%20(1).jpg" class="img-responsive" alt="" /></div>
+                    <div class="col-md-6 col-sm-12 p-0 alert img-right"><img src="images/b1%20(1).jpg" class="img-responsive" alt="" /></div>
                 </div>
             </div>
         </div>
@@ -202,27 +192,127 @@ chrome">
         <div class="col-md-6 p-0 my_height">
             <div class="row mx-0 h-100">
                 <div class="col-md-4 flex-column p-0 h-100">
-                    <div class="square"></div>
-                    <div></div>
-                    <div class="square"></div>
-                </div>
-                <div class="col-md-4 flex-column p-0 h-100">
-                    <div></div>
                     <div class="square">
-                        <span></span>
+                        <div class="cube">
+                            <div class="d1"></div>
+                            <div class="d2"></div>
+                            <div class="d3"></div>
+                            <div class="d4"></div>
+                            <div class="d5"></div>
+                            <div class="d6"></div>
+                        </div>
                     </div>
-                    <div></div>
+                    <div class="cube"></div>
+                    <div class="square">
+                        <div class="cube">
+                            <div class="d1"></div>
+                            <div class="d2"></div>
+                            <div class="d3"></div>
+                            <div class="d4"></div>
+                            <div class="d5"></div>
+                            <div class="d6"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 flex-column p-0 h-100">
-                    <div class="square"></div>
-                    <div></div>
-                    <div class="square"></div>
+                    <div class="cube"></div>
+                    <div class="square">
+                        <div class="cube">
+                            <div class="d1"></div>
+                            <div class="d2"></div>
+                            <div class="d3"></div>
+                            <div class="d4"></div>
+                            <div class="d5"></div>
+                            <div class="d6"></div>
+                        </div>
+                    </div>
+                    <div class="cube"></div>
+                </div>
+                <div class="col-md-4 flex-column p-0 h-100">
+                    <div class="square">
+                        <div class="cube">
+                            <div class="d1"></div>
+                            <div class="d2"></div>
+                            <div class="d3"></div>
+                            <div class="d4"></div>
+                            <div class="d5"></div>
+                            <div class="d6"></div>
+                        </div>
+                    </div>
+                    <div class="cube"></div>
+                    <div class="square">
+                        <div class="cube">
+                            <div class="d1"></div>
+                            <div class="d2"></div>
+                            <div class="d3"></div>
+                            <div class="d4"></div>
+                            <div class="d5"></div>
+                            <div class="d6"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- 菜单栏 -->
-    <div class="home-services"></div>
+    <div class="home-services">
+        <div class="container">
+            <h3 class="title">
+                <span>M</span>Enu
+            </h3>
+            <div class="row grid">
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+                <div class="clearfix"></div>
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-3 col-sm-6 services-hover">
+                    <img src="images/menu1.jpg" alt="" class="img-responsive">
+                    <figcaption>
+                        <h4>cocktails</h4>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
     <!-- 面板 -->
     <div class="home-fun"></div>
     <!-- 留言 -->
